@@ -195,6 +195,10 @@ const VoiceChannelContext: NavContextMenuPatchCallback = (children, { channel }:
     // Only for voice channels (type 2)
     if (!channel || channel.type !== 2) return;
 
+    // Don't show if user is currently in this channel
+    const currentVoiceChannelId = SelectedChannelStore.getVoiceChannelId();
+    if (currentVoiceChannelId === channel.id) return;
+
     const currentUsers = getVoiceChannelUserCount(channel.id);
     const isFull = isChannelFull(channel);
 
