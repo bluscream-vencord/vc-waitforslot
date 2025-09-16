@@ -49,3 +49,7 @@ A Vencord plugin that adds a "Wait for Slot" button to voice channel context men
 -   The plugin automatically stops monitoring when you join the channel, timeout is reached, or you disconnect from voice
 -   The notification sound is a gentle tone that won't be jarring
 -   All settings are persistent and remembered between sessions
+
+## Disclaimer
+
+This plugin was developed with the assistance of AI (Claude Sonnet 4). While the code has been reviewed and tested, please use it at your own discretion. If you encounter any issues, please report them through the GitHub issues page.
