@@ -1,0 +1,49 @@
+{
+    "name": "vc-waitforslot",
+    "version": "1.0.0",
+    "description": "A Vencord plugin that adds a 'Wait for Slot' button to voice channel context menus",
+    "main": "index.tsx",
+    "scripts": {
+        "build": "echo 'No build step required for Vencord user plugins'",
+        "test": "echo 'No tests specified'",
+        "lint": "echo 'Linting would go here'"
+    },
+    "keywords": [
+        "vencord",
+        "discord",
+        "voice",
+        "channel",
+        "wait",
+        "slot",
+        "plugin",
+        "userplugin",
+        "context-menu",
+        "notification",
+        "sound"
+    ],
+    "author": {
+        "name": "Bluscream",
+        "url": "https://github.com/Bluscream"
+    },
+    "license": "GPL-3.0-or-later",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Bluscream/vc-waitforslot.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Bluscream/vc-waitforslot/issues"
+    },
+    "homepage": "https://github.com/Bluscream/vc-waitforslot#readme",
+    "vencord": {
+        "plugin": true,
+        "userPlugin": true
+    },
+    "engines": {
+        "node": ">=16.0.0"
+    },
+    "files": [
+        "index.tsx",
+        "README.md",
+        "package.json"
+    ]
+}

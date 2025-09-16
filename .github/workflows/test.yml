@@ -1,0 +1,32 @@
+name: Test Plugin
+
+on:
+    push:
+        branches: [main, master]
+    pull_request:
+        branches: [main, master]
+
+jobs:
+    test:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v3
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v3
+              with:
+                  node-version: "18"
+
+            - name: Install dependencies
+              run: |
+                  npm install -g typescript
+                  npm install -g @types/node
+
+            - name: Type check
+              run: |
+                  npx tsc --noEmit index.tsx
+
+            - name: Lint check
+              run: |
+                  echo "Linting checks would go here if ESLint is configured"
